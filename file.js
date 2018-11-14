@@ -9,8 +9,13 @@ function numberOfPackets(fileSize){
 
 
 
-//second function
+//second function0
 function buildTorrentPacketArray(numOfPackets){
+    let list = [];
+    for (let 1 = 0; 1<numOfPackets; 1++;){
+
+    }
+    return list;
 
 }
 
