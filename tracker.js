@@ -24,8 +24,25 @@ function addSeed("s"){
 }
 
 
+function removeSeed(name){
+  let index = 0;
+  for(let i = 0; i<seeds.length; i++;){
+    if(list[i] === name){
 
+    }
+  }
+}
 
+function reportHealth(){
+  let leeches = 0;
+  let total = 0;
+  for(let i = 0; i < length; i++;){
+    if(percents[i] === 0){leeches = leeches + 1}
+    total = total + percents[i]
 
-function reportHealth()
+  return total / (percents.length - leeches)  
+  }
+
+}
+
 }
