@@ -19,30 +19,41 @@ function numOfSeeds(list, length){
     return found;
 }
 
-function addSeed("s"){
-  list.push("s")
+function addSeed(s){
+  list.push(s);
 }
 
 
 function removeSeed(name){
-  let index = 0;
-  for(let i = 0; i<seeds.length; i++;){
+  
+  for(let i = 0; i<seeds.length; i++){
     if(list[i] === name){
-
+      seeds[i] = null;
+      percent[i] = 0;
     }
   }
 }
 
 function reportHealth(){
+  
   let leeches = 0;
   let total = 0;
-  for(let i = 0; i < length; i++;){
-    if(percents[i] === 0){leeches = leeches + 1}
+
+  for(let i = 0; i < length; i++){
+
     total = total + percents[i]
 
-  return total / (percents.length - leeches)  
+    if(percents[i] === 0){
+      leeches = leeches + 1
+    }
   }
+  return total / (percents.length - leeches);
 
 }
+
+
+
+
+
 
 }
