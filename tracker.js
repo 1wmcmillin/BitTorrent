@@ -21,18 +21,21 @@ function numOfSeeds(list, length){
 
 function addSeed(s){
   list.push(s);
+  return list:
 }
 
 
-function removeSeed(name){
-  
-  for(let i = 0; i<seeds.length; i++){
-    if(list[i] === name){
-      seeds[i] = null;
-      percent[i] = 0;
+function removeSeed(list){
+function findValue(none){
+  let index = 0;
+  for(let i = 0; i < list.length; i++)
+    if(list[i] === value){
+      return null;
     }
-  }
 }
+}
+
+
 
 function reportHealth(){
   
